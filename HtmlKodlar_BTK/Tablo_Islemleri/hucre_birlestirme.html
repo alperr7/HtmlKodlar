@@ -1,0 +1,26 @@
+<!-- Hücreleri birleştirmek için colspan ve rowspan komutu kullanılır 
+    colspan:satırlardaki hücreleri birleştirir
+    rowspan:sütunlardaki hücreleri birleştirir -->
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+    
+        </head>
+        <body>
+            <table border ="1">
+                <caption>Ülke Nüfusları</caption>
+                <thead>
+                    <tr><th>Ülke</th><th>Nüfus</th></tr> <!-- td> etiketinden farklı olarak <th> etiketi hücre oluşturur fakat daha kalın yazdırır -->
+                </thead>
+                <tbody>
+                    <tr><td>Türkiye</td><td>82</td></tr>
+                    <tr><td>Yunanistan</td><td>12</td></tr>
+                    <tr><td>Bulgaristan</td><td>9</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="2">Toplam Nüfus: 103</td></tr>
+                </tfoot>
+            </table>
+        </body>
+    </html>
