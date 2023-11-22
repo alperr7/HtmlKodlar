@@ -1,0 +1,13 @@
+/* CSS  kodları metin tabanlı bir dosya içine yazılır ve ihtiyaç 
+duyulan her sayfaya bağlanır(link)
+<link rel="stylesheet" href="still.css" type="text/css"/> */
+
+p{
+    color:aqua;
+    font-size: 14px;
+}
+
+h1{
+    color:red;
+    font-size: 20px;
+}
