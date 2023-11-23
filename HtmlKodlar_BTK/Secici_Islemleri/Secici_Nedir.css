@@ -1,0 +1,11 @@
+/* Seçici İşlemleri
+
+Neyi seçerseniz onunla ilgili işlem yaparsınız
+
+Css kodu uygulayacaksanız , öncelikle HTML elemanını seçmeniz gerekir
+
+İşte bu aşamada selector ya da seçici dediğimiz kodlar devreye girmektedir
+
+secici      {özellik:değer;         özellik:değer}
+p            {color:red}        
+h1           {color:green;         font-size:20px   */     
