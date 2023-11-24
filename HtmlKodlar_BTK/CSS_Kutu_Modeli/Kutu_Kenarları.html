@@ -1,0 +1,37 @@
+<!-- Kutu Kenarları
+
+Kutu Kenarlarını kontrol etmek border özelliği kullanılır
+
+Özellik                Alabiliceği Değerler                  Açıklama
+border-style            none,solid,dotted,dashed,               Kenar çizgi tipini belirler
+                        double,groove,ridge,inset,outset
+border-width          px,thin,medium,thick                    Çizgi kalınlığını ayarlar
+border-color           renk_adı,#rrggbb,rgb(rrr,ggg,bbb)       Kenarlık rengini belirler -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+
+            }
+            h1{
+                border-style: solid; /* bulunduğu konumun sağından soluna bir kutu ekler */
+                border-width:10px 20px 30px 40px;
+                border-color: red blue yellow green;
+                width: 200px;
+                height: 40px;
+                padding: 0px 50px 10px 20px;
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Eğitimlerimiz</h1>
+        <h2>Temel Bilişim</h2>
+        <p>Windows</p>
+        <p>Word</p>
+        <p>Excel</p>
+    </body>
+</html>
