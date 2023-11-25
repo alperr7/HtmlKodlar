@@ -1,0 +1,55 @@
+<!-- Kutu Konumu -->
+
+<!-- Kutuların sayfada bulundukları yeri belirlemek için positiyon özelliği kullanılır. -->
+
+<!-- Özellik ve Değer            Açıklama
+position:static;            Her kutunun varsayılan değeridir.Static değer sahip kutular nereye
+                            konulduysa orada bulunurlar.Kutuların varsayılan değeridir.
+position:relative;          Kutunun bulunduğu konumuna göre taşınmasını sağlar
+position:fixed;             Kutunun sayfaya göre ayarlanmasını sağlar
+position:absolute;          Başka kutu içinde bulunan kutuları kontrol etmek için kullanılır.İçinde
+                            bulunduğu kutuya göre üstten,sağdan,alttan ve soldan mesafeler
+                            verilerek kutunun konumu ayarlanır -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                border-color:indianred;
+                border-style: solid;
+
+            }
+
+            #buyuk{
+                width: 200px;
+                height: 100px;
+                background-color: khaki;
+                position: fixed; /* sayfaya göre konumu değişsin diye izin veriyosun */
+                right: 0px;
+                bottom: 0px; /* aşağısı ve sağıyla arasındaki konum 0px olsun */
+                
+            }
+
+            #kucuk{
+                width: 100px;
+                height: 50px;
+                background-color: lawngreen;
+                /* position: relative;  *//* bulunduğu konuma göre değişmesine izin veriyosun */
+                position: absolute; /* bulunduğu kutuya göre konumunun değişmesine izin verir */
+                left: 10px;     /* soldan 20px yukardan 50px değişti */
+                top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="buyuk"> 
+            <div id="kucuk">
+
+            </div>
+        </div>
+       
+    
+    </body>
+</html>

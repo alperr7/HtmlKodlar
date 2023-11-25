@@ -1,0 +1,41 @@
+<!-- Kutuların öne veya arkaya taşınması için z-index özelliği kullanılır 
+Daha yüksek z-index değerine sahip olan daha önde görünür. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                border-color:indianred;
+                border-style: solid;
+
+            }
+
+            #buyuk{
+                width: 200px;
+                height: 100px;
+                background-color: khaki;
+                z-index: 1;
+            }
+
+            #kucuk{
+                width: 100px;
+                height: 50px;
+                background-color: lawngreen;
+                position: relative;
+                left: -30px;
+                z-index: -1;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div id="buyuk"> 
+            <div id="kucuk">
+
+            </div>
+        </div>
+       
+    
+    </body>
+</html>

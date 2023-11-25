@@ -1,0 +1,50 @@
+<!-- Kutu İçeriğinin Taşması
+
+Eğer küçük bir kutunuz varsa ve içine alabiliceğinden daha fazla 
+içerik koyarsanız adına overlow/taşma denilen olay meydana gelir 
+
+overflow özelliği ile taşan içeriğin durumu belirlenebilir
+
+Özellik ve Değer            Açıklama 
+overflow:visible;           Varsayılan olarak bu değer kullanılır.Eğer içerik kutu içine sığmazsa
+                            taşan kısım alttan devam eder ve ziyaretçiye gösterilir
+overflow:hidden;            İçerik kutu içine sığmazsa taşan kısım ziyaretçiye gösterilmez
+overflow:scroll;            İçerik kutu içiine sığmazsa taşa kısım ziyaretçiye gösterilmez ama bir 
+                            kaydırma çubuğu ile taşan içeriğin görüntülenmesini sağlanır 
+overflow:auto;              Eğer taşma olursa kaydırma çubuğu gösterilir ve taşan içerik 
+                            kaydırma çubuğu ile görüntülenebilir -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                border-color: indianred;
+                border-style: solid;
+            }
+
+            #buyuk{
+                width: 200px;
+                height: 100px;
+                background-color: gray;
+                overflow: auto;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="buyuk">
+            lsögslaöaslföalsföalsö <br>
+            aslfalsöföaslföasflasfö<br>
+            asflöaslföas lsaöf al  asföl ö salöfal asl föal  asfölöa s <br>
+            saflasfölfsaöflasöflasfö l<br>
+            lasföalsföalsföalsföalsföalsföalsfö <br>
+            safşlöasflaösflasöflasföalsföal <br>
+            asşfölçalsşföalsföalsföalsföalsfö<br>
+            sfaslföalsföalsföalsföalsföaslföaslf<br>
+        </div>
+        <div id = "kucuk">
+
+        </div>
+    </body>
+</html>                            
