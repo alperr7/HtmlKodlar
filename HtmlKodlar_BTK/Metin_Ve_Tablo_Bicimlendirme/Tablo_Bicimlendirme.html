@@ -1,0 +1,73 @@
+<!-- Tablo Biçimlendirme 
+
+Tablo biçimlendirme table , tr , td , th , caption , thead , tbody ve 
+tfoot etiketlerine ayrı ayrı CSS kodları uygulanabilir
+
+Hücre içindeki metinleri hizalamak için aşağıdaki özellikler kullanılır:
+    text-align 
+    vertical-align 
+
+Eğer iki-çizgi şeklinde görünen kenarlıkları tek çizgiye dönüştürmek istiyorsanız 
+border-collepse:collapse;komutunu kullanmalısınız 
+
+Tablo veya hücrelere ardalan için;
+    background-color 
+    background-image -->
+
+
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <style>
+            table{
+                color:blue;
+                background-color: yellow;
+                border-collapse: collapse; /* çizgileri yok eder */
+                border-width: 15px;
+            }
+
+            th{
+                font-size: 16px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bolder;
+                background-color: seagreen;
+                color:white;
+                padding: 10px;
+                margin: 10px;
+                background-image: url("resim/bayrak.jpg");
+                background-size: 75px;
+                background-repeat: no-repeat;
+                background-position:center;
+            }
+
+            td{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 12px;
+                font-style: italic;
+                font-weight: bolder;
+                background-color: yellowgreen;
+                text-align: left;
+                padding: 5px;
+                vertical-align: top;
+                height:30px;
+                border-width: 5px;
+                border-color: brown;
+                border-style: dotted;
+
+                
+            }
+
+         
+        </style>
+    </head>
+    <body>
+       
+        <table border="1">
+            <tr><th>Ülke</th><th>Nüfus</th></tr>
+            <tr><td>Türkiye</td><td>82</td></tr>
+            <tr><td>Yunanistan</td><td>12</td></tr>
+            <tr><td>Bulgaristan</td><td>9</td></tr>
+
+        </table>
+    </body>
+</htlm>
