@@ -1,0 +1,12 @@
+/* CSS Dosyası */
+
+/* Boşlukları sıfırla */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: aquamarine;
+    background-image: url("Resimler/bayr.jpg");
+}

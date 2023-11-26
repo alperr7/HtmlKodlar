@@ -1,0 +1,52 @@
+<!-- Menü Oluşturma ve Biçimlendirme 
+
+Menüler listelerden oluşturulur
+Menülerin biçimlendirilmesi CSS Kutu Modeli'nde öğrendiğim 
+komutlarla yapılır -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul{
+                list-style-type:none ;
+
+            }
+
+            li{
+                border-style: solid;
+                border-color: darkmagenta;
+                border-width: 5px;
+                border-radius: 20px;
+                width: 100px;
+                padding: 10px;
+                float:left;
+                margin: 5px;
+                background-color: darkorange;
+                text-align: center; /* metinlerin butonun ortasında olmasını istiyorsak */
+
+            }
+
+            ul li a{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+
+            }
+
+            ul li a:hover{
+                color:red;
+                text-decoration: underline;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Anasayfa</a> </li>
+            <li><a href = "urunlerimiz.html">Ürünlerimiz</a></li>
+            <li><a href = "bizkimiz.html">Biz Kimiz?</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </body>
+</html>
