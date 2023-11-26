@@ -1,0 +1,91 @@
+<!-- Yazıtipi Özellikleri  
+
+Özellik         Alabiliceği Değerler                    Açıklama 
+Font-family         Times,Courier,Verdana,...              Yazıtipi
+color               renkadı,#rrggbb,rgb(rrr,ggg,bbb)       Metin rengini değiştirir
+font-size           smaller,small,medium,large,larger      Metin boyutunu değiştirir.1 em=16px
+                    px,em 
+font-weight         lighter,normal,bold,bolder               Metinlerin daha ince,normal ya da kalın gösterir 
+font-style          normal,italic                            Metinlerin normal ya da eğik görünmesini sağlar 
+font-variant        normal,smal-caps                         Metinlerin küçük harf boyutlarında ama büyük 
+                                                            harf karakterleri ile görünmesini sağlar 
+text-transform      none,lowercase,uppercase,                Metinleri büyük harfle veya küçük harfle 
+                    capitalize                               çevirmeye yarar 
+text-decoration     none,underline,overline,line-           Metinlerin altını,üstünü veya üzerini çizmek için
+                    through                                 kullanılır 
+letter-spacing      normal,em                               Harfler arasındaki mesafe 
+word-spacing        normal,em                               Kelimeler arasındaki mesafe -->
+
+
+<!-- Metin Ardalan İşlemleri 
+
+Metinlerin ardalan işlemleri kutu modelindekiyle aynıdır 
+Ardalan rengi için:
+    background-color
+Ardalan resmi için:
+    background-image -->
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                h1{
+    
+                }
+    
+                p{
+                   /*  Paragraf Özellikleri */
+                    text-indent: 40px;
+                    text-align: left ;
+                    line-height: 20px;
+    
+                    /* Metin Özellikleri */
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color:yellowgreen;
+                    font-size: 20px;
+                    font-weight: bolder; /* Yazı kalınlığı */
+                    font-style:italic;
+                    font-variant:small-caps ;/* bütün metinleri küçük boyutlu büyük harflerle biçimlendirdi */
+                    text-transform: capitalize; /* her kelimenin ilk harfini büyük yapma */
+                    /* text-transform: uppercase; her kelimeyi büyük yazar */
+                    /* text-transform: inherit; bir üstündeki nesnenin özelliklerini alır */
+                    text-decoration: underline; /* metinlerin altını çizmek için */
+                    letter-spacing: 2px; /* harfler arasındaki mesafeyi */ 
+                    word-spacing: 10px; /* kelimeler arasındaki mesafeyi */ 
+                }   
+            
+                .metin{
+                    color:violet;
+                    font-size: 15px;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    background-color: blue;
+                    background-image: url("resim/bayr.jpg");
+                    background-size: 350px;
+                    background-repeat:no-repeat ;
+                    background-position:center ;
+                    width: 300px;
+                    height: 200px;
+
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Paragraf Özellikleri</h1>
+            <p class="metin">Sabun köpüklerinde gökkuşağının renklerini, lapa lapa yağan karda uçuşan serçeleri görebildiğimiz 
+                için Tanrı’ya şükredelim. 
+                Eğer bize verilen nimetleri ve bütün güzellikleri göremeyecek kadar kör isek utanalım. 
+                Elimizdeki nimetleri sayalım. Ufak tefek çabalarla ortadan kaldırılabilecek sıkıntıları değil.
+            </p>
+            <p>
+                Para, gerçek zenginlik değildir. O, sadece ihtiyaçların giderilmesine vasıta olduğu için değerlidir. 
+                Bir çölün ortasında, hararetten yanan bir insan için birkaç damla soğuk su, 
+                bir torba altından çok daha değerlidir. 
+            </p>
+            <p class="metin">
+                Kışın beyaz güzelliğinin de yazın sıcak ve nemli günlerinin de zevkine var. 
+                Her mevsim, her gün, her an gelir geçer ve hiçbiri asla birbirinin aynı ya da tekrarı değildir. 
+                Kış soğuğunun ortasında yazı, yazın bunaltıcı sıcağında kışı özlemek yerine, 
+                her mevsimi kendi güzelliğiyle kabul et.”
+            </p>
+        </body>
+    </html>   

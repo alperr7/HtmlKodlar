@@ -1,0 +1,61 @@
+<!-- Gögle Oluşturma 
+
+Kutuya gölge yapmak için box-shadow özelliği kullanılır 
+    box-shadow:h-shadow v-shadow blur spread color inset;
+
+Değerler        Açıklama
+none            Varsayılan değerdir.Gölge olmamasını sağlar
+h-shadow        Gölgenin yatay boyutu 
+v-shadow        Gölgenin dikey boyutu 
+blur            Gögenin kenarını belirlenen boyutta yumuşatır 
+spread          Gölgenin tüm yönlerde genişlemesini sağlar
+color           Gölge rengi 
+inset           Gölgeyi nesnenin iç tarafına yapar -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                border-style: solid;
+                border-width:10px; ;
+                border-color: darkblue ;
+                margin: 50px;
+                padding: 20px;
+                box-shadow: 10px 10px 40px yellow ;
+                color: yellow;
+                
+            }
+
+            body{
+                background-color: black;
+                background-image: url("resim/fb.jpg");
+                background-size: 1050px;
+                background-position:center ;
+                background-repeat:no-repeat ;
+            }
+           
+            
+        </style>
+        
+    </head>
+    <body >
+        
+        <p>
+            bu dünyada herşey yalan
+            bir tek gerçek sensin inan <br>
+            yolun sonu ölüm olsa
+            vazgeçmem ben, bu sevdadan <br>
+
+        </p>
+        <p>
+            candan öte sevmedik mi seni kanarya
+            issız gecelerde gittik deplasmanlara
+                                                    <br>
+            candan öte sevmedik mi seni kanarya
+            issız gecelerde gittik deplasmanlara
+   <br>
+        </p>
+        
+    </body>
+</html>

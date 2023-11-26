@@ -1,0 +1,69 @@
+<!-- Paragraf Özellikleri
+
+Özellik         Alabiliceği Değerler        Açıklama 
+text-ident      emp,px                      Paragrafın ilk satırdaki 
+                                            girintisini ayarlar 
+text-align      left,right,center,justify   Paragafın sola,sağa ortaya
+                                            veya her iki kenara yaslanmasını
+                                            sağlar 
+line-height     em,px                       Paragraftaki satırlar 
+                                            arasındaki mesafeyi ayarlar -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+
+            }
+
+            p{
+               /*  Paragraf Özellikleri */
+                text-indent: 40px;
+                text-align: left ;
+                line-height: 20px;
+
+                /* Metin Özellikleri */
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color:yellowgreen;
+                font-size: 20px;
+                font-weight: bolder; /* Yazı kalınlığı */
+                font-style:italic;
+                font-variant:small-caps ;/* bütün metinleri küçük boyutlu büyük harflerle biçimlendirdi */
+                text-transform: capitalize; /* her kelimenin ilk harfini büyük yapma */
+                /* text-transform: uppercase; her kelimeyi büyük yazar */
+                /* text-transform: inherit; bir üstündeki nesnenin özelliklerini alır */
+                text-decoration: underline; /* metinlerin altını çizmek için */
+                letter-spacing: 2px; /* harfler arasındaki mesafeyi */ 
+                word-spacing: 10px; /* kelimeler arasındaki mesafeyi */ 
+            }   
+        
+            .metin{
+                color:violet;
+                font-size: 15px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Paragraf Özellikleri</h1>
+        <p class="metin">Sabun köpüklerinde gökkuşağının renklerini, lapa lapa yağan karda uçuşan serçeleri görebildiğimiz 
+            için Tanrı’ya şükredelim. 
+            Eğer bize verilen nimetleri ve bütün güzellikleri göremeyecek kadar kör isek utanalım. 
+            Elimizdeki nimetleri sayalım. Ufak tefek çabalarla ortadan kaldırılabilecek sıkıntıları değil.
+        </p>
+        <p>
+            Para, gerçek zenginlik değildir. O, sadece ihtiyaçların giderilmesine vasıta olduğu için değerlidir. 
+            Bir çölün ortasında, hararetten yanan bir insan için birkaç damla soğuk su, 
+            bir torba altından çok daha değerlidir. 
+        </p>
+        <p class="metin">
+            Kışın beyaz güzelliğinin de yazın sıcak ve nemli günlerinin de zevkine var. 
+            Her mevsim, her gün, her an gelir geçer ve hiçbiri asla birbirinin aynı ya da tekrarı değildir. 
+            Kış soğuğunun ortasında yazı, yazın bunaltıcı sıcağında kışı özlemek yerine, 
+            her mevsimi kendi güzelliğiyle kabul et.”
+        </p>
+    </body>
+</html>                                          
