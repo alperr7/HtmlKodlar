@@ -5,63 +5,10 @@
         <title>Alper Kandemir'in Resmi Web Sitesi</title>
         <meta name="description" content="Alper Kandemir'in Resmi Web Sitesi">
         <meta name="keywords" content="alper,kandemir,html,css,plc">
+        <link rel="stylesheet" href="style.css">
         <style>
-            *{
-                margin:0px;         /* herşeyin kenarlarını 0 yaptık */
-                padding:0px;
-            }
-
-            body{
-                background-color: aqua;
-                background-image: url("Resimler/bayr.jpg");
-            }
-
-            #sayfa{
-                width: 400px;
-                border-width: 1px;
-                min-height: 600px;
-                border-style: solid;
-                margin: auto;
-            }
-        
-            /* Banner */
-            #banner{
-                width: 398px;
-                border-width: 1px;
-                height: 100px;
-                border-style: solid;
-                background-color: yellow;
-                margin: auto;
-            }
-        
-        /* logo */
-            #logo{
-                width: 100px;
-                border-width: 1px;
-                height: 80px;
-                border-style: solid;
-                background-color: white;
-                position: relative;
-                top: 10px;
-                left:10px;
-
-        }   
-
-        /* sosyal medya ikonları */
-        #sosyal{
-                width: 180px;
-                height: 40px;
-                border-style: solid;
-                border-width: 1px;
-                background-color: white;
-                float: right;
-                position: relative;
-                top: 50px;
-                right: 10px;
-        }
-        
-        </style>
-
+           
+            </style>
     </head>
     <body>
         <div id="sayfa">
@@ -69,25 +16,57 @@
                 <div id="logo">
                     <img src="Resimler/ataturk.jpg"
                     alt="Mustafa Kemal Atatürk" title="Mustafa Kemal Atatürk">
+                    
                 
                 </div>
                 <div id="sosyal">
-                    <a href ="https://www.facebook.com/alper.kandemir.12/"><img src="Resimler/face.png"></a>
-                    <a href="https://www.instagram.com/alperkndmr7/"><img src="Resimler/"></a>
+                    <a href ="https://www.facebook.com/alper.kandemir.12/"><img id="ikon" src="Resimler/face.png"></a>
+                    <a href="https://www.instagram.com/alperkndmr7/"><img id="ikon"src="Resimler/insta.png"></a>
                 </div>
                 
             </header>
             <nav id="anamenu">
+                    <ul>
+                        <li><a href="index.html"></a>Anasayfa</li>
+                        <li><a href="ben-kimim.html"></a>Ben ben-kimim</li>
+                        <li><a href="egitim.html"></a>Eğitim</li>
+                        <li><a href="iletisim.html"></a>İletişim</li>
 
+                    </ul>
             </nav>
             <article id="icerik">
+                <img class="resim
+                " src="Resimler/bayrak.jpg"
+                alt="bayrak" title="Türk Bayrağı">
+                <h1 class="baslik">Lorem Ipsum</h1>
+                <p class="metin">
+                    Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe kullanılan taklit yazı bloğu olarak tanımlanır. Lipsum, oluşturulacak şablon ve taslaklarda içerik yerine geçerek yazı bloğunu doldurmak için kullanılır.
 
+Lipsum, 1500'lerin başlarında bir matbaacının font model kitabı oluşturmak için, bir yazı tipi kütüphanesindeki harflerin sıralamasını bozarak yerleştirdiğinden bu yana endüstri standardı haline gelmiştir.
+                </p>
             </article>
-            <aside id="yanemnu">
-
+            <aside id="yanmenu">
+                <h1 class="baslik">Haber</h1>
+                <p>asflşaösf salsxzföasflas löasfö lasföaslföaslföaslföas
+                    saflöasflaösf aslföals föalsföaslfaö
+                </p>
+                <h1 class="baslik">Haber2</h1>
+                <p>asflşaösf salsxzföasflas löasfö lasföaslföaslföaslföas
+                    saflöasflaösf aslföals föalsföaslfaö
+                </p>
+                <h1 class="baslik">Haber3</h1>
+                <p>asflşaösf salsxzföasflas löasfö lasföaslföaslföaslföas
+                    saflöasflaösf aslföals föalsföaslfaö
+                </p>
             </aside>
             <footer id="altmenu">
-
+                <a href="index.html">Anasayfa</a>
+                <a href ="ben-kimim.html">Ben Kimim?</a> |
+                <li><a href="egitim.html">Eğitim</a></li> |
+                <li><a href="iletisim.html"></a></li> |
+                <br>
+                <p>Tüm hakları saklıdır</p>
+                <p class="kucukmetin">Tüm hakları saklıdır</p>
             </footer>
         </div>
     </body>
